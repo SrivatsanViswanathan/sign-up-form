@@ -14,54 +14,76 @@
 </head>
 <body>
     <div class="left-container">
+        <img src="./images/skull.JPG" alt="Skull">
         <div class="banner">
             <div class="banner-content">
-                <h1>Skull Crushers</h1>
+                <h1>Blue Shadow Skulls</h1>
             </div>
         </div>
         <div class="footer">
-            Image found: <a class="link" href="https://www.nawpic.com/">https://www.nawpic.com/</a>
+            Image found: 
+            <a class="link" href="https://www.nawpic.com/" target="_blank">https://www.nawpic.com/</a>
         </div>
     </div>
     <div class="right-container">
         <div class="top-container">
-            <h3>This is not a real online service! You know you need something like this in your life
-                to help you realize your deepest dreams. <br>
+            <h3>Join the Blue Shadow Skulls! We are a fearsome group hidden in the shadows who deliver
+                punishment on the living who deserve it. <br>
                 Sign up <i>now</i> to get started. <br><br>
                 You <i>know</i> you want to.
             </h3>
         </div>
         <div class="middle-container">
-            <h3></h3>
             <fieldset class="form">
+                <h3>Sign Up Now!</h3>
                 <form action="#" id="form">
-                    <div class="left-side">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Bob" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="bob.ross@gmail.com" 
-                        required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" 
-                        placeholder="~amazing123" required>
+                    <div class="row">
+                        <div class="input left">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Shadow" 
+                            required>
+                        </div>
+                        <div class="input right">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Skulls" 
+                            required>
+                        </div>
                     </div>
-                    <div class="right-side">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Ross" required>
-                        <label for="phoneNumber">Phone Number:</label>
-                        <input type="text" id="phoneNumber" name="phoneNumber"
-                        pattern="(\d{3}([\-])?\d{3}([\-])?\d{4})" placeholder="111-222-3333" required>
-                        <label for="confirmPassword">Confirm Password:</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" 
-                        placeholder="~amazing123" required>
+                    <div class="row">
+                        <div class="input left">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" 
+                            placeholder="shadow.skulls@gmail.com" required>
+                        </div>
+                        <div class="input right">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" 
+                            placeholder="333-444-5555">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input left">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="8"
+                            placeholder="~Shadow345~" required>
+                        </div>
+                        <div class="input right">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" 
+                            minlength="8" placeholder="~Shadow345~" required>
+                        </div>
                     </div>
                 </form>
             </fieldset>
         </div>
         <div class="bottom-container">
-            <button type="submit" form="form">Create Account</button>
-            <p class="login-text1">Already have an account?</p>
-            <p class="login-text2">Log in</p>
+            <div class="button">
+                <button type="submit" form="form">Create Account</button>
+            </div>
+            <div class="login-text">
+                <p class="login-text1">Already have an account?</p>
+                <p><a class="login-text2" href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
