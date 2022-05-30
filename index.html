@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,57 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <div class="left-container"></div>
-    <div class="right-container"></div>
+    <div class="left-container">
+        <div class="banner">
+            <div class="banner-content">
+                <h1>Skull Crushers</h1>
+            </div>
+        </div>
+        <div class="footer">
+            Image found: <a class="link" href="https://www.nawpic.com/">https://www.nawpic.com/</a>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="top-container">
+            <h3>This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams. <br>
+                Sign up <i>now</i> to get started. <br><br>
+                You <i>know</i> you want to.
+            </h3>
+        </div>
+        <div class="middle-container">
+            <h3></h3>
+            <fieldset class="form">
+                <form action="#" id="form">
+                    <div class="left-side">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Bob" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="bob.ross@gmail.com" 
+                        required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" 
+                        placeholder="~amazing123" required>
+                    </div>
+                    <div class="right-side">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Ross" required>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber"
+                        pattern="(\d{3}([\-])?\d{3}([\-])?\d{4})" placeholder="111-222-3333" required>
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" 
+                        placeholder="~amazing123" required>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div class="bottom-container">
+            <button type="submit" form="form">Create Account</button>
+            <p class="login-text1">Already have an account?</p>
+            <p class="login-text2">Log in</p>
+        </div>
+    </div>
 </body>
+
 </html>
