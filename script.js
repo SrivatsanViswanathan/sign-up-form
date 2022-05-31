@@ -12,7 +12,6 @@ function validate() {
     const cError = document.getElementById('cError');
     let mismatch = true;
     let valid = false;
-    console.log(mismatch);
     if (password.value === confirmPassword.value) {
         mismatch = false;
         cError.textContent = ''
