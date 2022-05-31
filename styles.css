@@ -12,6 +12,7 @@ body {
 }
 
 .body {
+    position: relative;
     display: flex;
 }
 
@@ -80,6 +81,7 @@ body {
     padding-top: 9%;
     padding-right: 20%;
     padding-left: 3%;
+    min-height: 20vh;
 }
 
 .middle-container {
@@ -87,6 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    min-height: 20vh;
 }
 
 fieldset {
@@ -139,6 +142,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 235, 235);
+    min-height: 20vh;
 }
 
 button {
@@ -177,6 +181,15 @@ button:active {
         margin: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    .body {
+        flex-direction: column;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 10%;
     }
 
     .left-container, .right-container, .top-container, .middle-container, .bottom-container {
