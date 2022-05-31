@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./styles.css">
 
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 
     <title>Sign Up Form</title>
 </head>
@@ -38,7 +38,7 @@
             <div class="middle-container">
                 <fieldset class="form">
                     <h3>Sign Up Now!</h3>
-                    <form action="#" id="form">
+                    <form id="form" onsubmit="return validate();">
                         <div class="row">
                             <div class="input left">
                                 <label for="firstName">FIRST NAME</label>
@@ -59,7 +59,7 @@
                                 <label for="phoneNumber">PHONE NUMBER</label>
                                 <input type="text" id="phoneNumber" name="phoneNumber" 
                                 pattern="(\d{3}([\-])?\d{3}([\-])?\d{4})" placeholder="333-444-5555" 
-                                title="Example: 333-444-5555">
+                                title="Example: 333-444-5555" required>
                             </div>
                         </div>
                         <div class="row">
@@ -67,11 +67,13 @@
                                 <label for="password">PASSWORD</label>
                                 <input type="password" id="password" name="password" minlength="8"
                                     placeholder="~Shadow345~" required>
+                                <div class="error" id="error"></div>
                             </div>
                             <div class="input right">
                                 <label for="confirmPassword">CONFIRM PASSWORD</label>
                                 <input type="password" id="confirmPassword" name="confirmPassword" minlength="8"
                                     placeholder="~Shadow345~" required>
+                                <div class="cError" id="cError"></div>
                             </div>
                         </div>
                     </form>
