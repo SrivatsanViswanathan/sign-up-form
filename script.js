@@ -22,7 +22,7 @@ function validate() {
         password.style.borderColor = 'red';
         confirmPassword.style.borderColor = 'red';
     }
-    if (number.test(password.value) && special.test(password.value) && letter.test(password.value)) {
+    if (number.test(password.value) && special.test(password.value) && letter.test(password.value) && password.value === confirmPassword.value) {
         error.textContent = ''
         error.style.opacity = '0';
         password.style.borderColor = 'gray';
