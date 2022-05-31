@@ -4,9 +4,27 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 150vh;
     background-color: rgb(235, 235, 235);
+}
+
+.body {
+    display: flex;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #333;
+    height: 50px;
+    bottom: 0;
+    width: 70%;
 }
 
 /* Left Container */
@@ -36,7 +54,7 @@ body {
     text-align: center;
 }
 
-.left-container .footer {
+.left-footer {
     text-align: center;
     color: white;
     width: 100%;
@@ -45,7 +63,7 @@ body {
     margin-bottom: 1.5vh;
 }
 
-.footer a {
+.left-footer a {
     color: white;
     text-decoration: none;
 }
@@ -152,7 +170,6 @@ button:active {
     text-decoration: none;
 }
 
-
 /* Responsive Design */
 
 @media only screen and (max-width: 1000px) {
@@ -188,5 +205,9 @@ button:active {
 
     input {
         width: 100%;
+    }
+
+    button {
+        margin-top: 2%;
     }
 }
